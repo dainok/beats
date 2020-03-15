@@ -13,6 +13,19 @@ paths:
 {{ end }}
 exclude_files: [".gz$"]
 
+{{ else if eq .input "kafka" }}
+
+type: kafka
+hosts:
+{{ range $i, $host := .hosts }}
+  - {{$host}}
+{{ end }}
+topics:
+{{ range $i, $topic := .topics }}
+  - {{$topic}}
+{{ end }}
+group_id: {{.group_id}}
+
 {{ end }}
 
 tags: {{.tags}}

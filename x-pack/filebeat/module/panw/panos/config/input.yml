@@ -58,9 +58,13 @@ processors:
         destination.user.name: 13
         network.application: 14
         panw.panos.source.zone: 16
+        observer.ingress.zone: 16
         panw.panos.destination.zone: 17
+        observer.egress.zone: 17
         panw.panos.source.interface: 18
+        observer.ingress.interface.name: 18
         panw.panos.destination.interface: 19
+        observer.egress.interface.name: 19
         panw.panos.flow_id: 22
         client.port: 24
         source.port: 24
@@ -111,9 +115,13 @@ processors:
         destination.user.name: 13
         network.application: 14
         panw.panos.source.zone: 16
+        observer.ingress.zone: 16
         panw.panos.destination.zone: 17
+        observer.egress.zone: 17
         panw.panos.source.interface: 18
+        observer.ingress.interface.name: 18
         panw.panos.destination.interface: 19
+        observer.egress.interface.name: 19
         panw.panos.flow_id: 22
         client.port: 24
         source.port: 24

@@ -142,6 +142,7 @@ processors:
         panw.panos.subject: 51
         destination.user.email: 52
         observer.hostname: 59
+        panw.panos.threat.category: 69
 
   - drop_fields:
       fields:
